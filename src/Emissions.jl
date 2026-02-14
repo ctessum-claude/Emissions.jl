@@ -20,6 +20,7 @@ include("io.jl")
 include("spatial.jl")
 include("surrogates.jl")
 include("output.jl")
+include("pipeline.jl")
 
 # Export all public functions and types
 # Constants and unit conversions
@@ -41,6 +42,10 @@ export NewPolygon, NewGridIrregular, setupSpatialProcessor, findCountyPolygon, G
 export generate_data_sparse_matrices, generate_weight_sparse_matrices, generate_grid_sparse_matrices, generate_countySurrogate, update_locIndex
 
 # Output functions
-export writeEmis, find_surrogate_by_code, get_data_weight_shapefiles
+export writeEmis, get_data_weight_shapefiles
+
+# Pipeline functions
+export read_ff10, aggregate_emissions, filter_known_pollutants, map_pollutant_names!,
+       normalize_country, read_gridref, assign_surrogates, build_data_weight_map, find_surrogate_by_code
 
 end
