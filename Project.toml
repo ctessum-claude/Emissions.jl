@@ -21,7 +21,7 @@ Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
 [compat]
 CSV = "0.9, 0.10"
-ConservativeRegridding = "0.1.0"
+ConservativeRegridding = "0.1.0, 0.2"
 DataFrames = "1"
 GeoDataFrames = "0.3, 0.4"
 GeoInterface = "1"
